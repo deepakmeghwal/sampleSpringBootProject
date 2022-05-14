@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  shutdown: GRACEFUL
+  servlet:
+    contextPath: /myProject
+
+#Datasource
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/myprojectschema
+    username: root
+    password: Abc@#123
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
